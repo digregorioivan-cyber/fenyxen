@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Giustificazione completa (anche ultima riga) — SOLO per H1 */
+.justify-fill{
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+.justify-fill::after{
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+/* Giustificazione “smart”: ultima riga a sinistra (pulita per paragrafi) */
+.justify-smart{
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: left;     /* Chrome/Edge/Firefox */
+  -ms-text-align-last: left; /* IE/legacy */
+  hyphens: auto;
+}
+
+/* opzionale per leggibilità */
+.relaxed{ line-height: 1.7; }

@@ -1,0 +1,30 @@
+@"
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+.vercel/
+.vscode/
+
+# cloudflare / pages
+dist/
+functions/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# env & local
+.env
+.env.local
+.env.*.local
+
+# OS junk
+.DS_Store
+Thumbs.db
+"@ | Set-Content -Encoding UTF8 .gitignore
+
