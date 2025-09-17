@@ -1,5 +1,5 @@
 // app/i18n.ts
-// i18n centrale per FenyXen — SOLO EN e IT (come richiesto), senza chiavi duplicate.
+// i18n centrale per FenyXen — SOLO EN e IT, senza chiavi duplicate.
 // Rilevazione: ?lang= / ?country= / Accept-Language -> fallback EN.
 
 export const SUPPORTED_LOCALES = ["en", "it"] as const;
